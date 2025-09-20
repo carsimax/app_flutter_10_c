@@ -1,0 +1,19 @@
+{
+  "name": "app_flutter_10_c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:backend": " cd packages/backend && ./mvnw spring-boot:run",
+    "start:frontend": "flutter emulators --launch Medium_Phone_API_36.0 && sleep 15 && cd packages/frontend && flutter run --debug",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
