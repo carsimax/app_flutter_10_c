@@ -15,7 +15,7 @@ class User{
     return User(
       id: json['id'],
       fullName: json['fullName'],
-      email: json['emailL']
+      email: json['email'],
     );
   }
 
@@ -28,4 +28,9 @@ class User{
     };  
   }
 
+  @override
+  String toString() {
+    // TODO: implement toString
+    return 'User{id: $id, fullName: $fullName, email: $email, password: $password}';
+  }
 }

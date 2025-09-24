@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../services/api_services.dart';
-import '../models/user_model.dart';
+import 'package:frontend/services/api_services.dart';
+import 'package:frontend/models/user_model.dart';
 
 class RegisterUserViewModel extends ChangeNotifier{
   final ApiService _apiService = ApiService();
